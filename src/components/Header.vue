@@ -1,6 +1,6 @@
 <template>
   <v-toolbar flat style="background-color:transparent">
-    <v-btn class="text-xs-left" flat v-if="goBackArrow && isNotHomePage" @click="goBack">
+    <v-btn v-if="goBackArrow && isNotHomePage" @click="goBack" class="text-xs-left" flat>
       <v-icon large>keyboard_backspace</v-icon>
     </v-btn>
     <v-spacer></v-spacer>
@@ -10,7 +10,7 @@
         <span display-1 class="ml-2">{{ timenow }}</span>
       </h1>
     </v-btn>
-    <v-btn large flat v-if="isNotHomePage" @click="gotoLanding">
+    <v-btn v-if="isNotHomePage" @click="gotoLanding" large flat>
       <v-icon large>home</v-icon>
     </v-btn>
     <v-btn large flat>
@@ -19,7 +19,7 @@
     <v-btn large flat>
       <v-icon large>event_note</v-icon>
     </v-btn>
-    <v-btn large flat @click="closeApplication">
+    <v-btn @click="closeApplication" large flat>
       <v-icon large>exit_to_app</v-icon>
     </v-btn>
   </v-toolbar>

@@ -2,9 +2,9 @@
   <div>
     <Header />
     <br />
-    <v-layout align-center justify-center row wrap pt-5></v-card>
+    <v-layout align-center justify-center row wrap pt-5>
       <v-flex v-for="item in menuList" :key="item.name" xs3 class="text-xs-center pb-5">
-        <v-btn @click="gotoNext(item.target)" class="round-button" :color="item.color">
+        <v-btn @click="gotoNext(item.target)" :color="item.color" class="round-button">
           <v-flex xs3 class="button-text">
             <v-icon large dark>{{item.icon}}</v-icon>
           </v-flex>

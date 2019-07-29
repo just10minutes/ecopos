@@ -7,9 +7,9 @@
       <v-layout align-center justify-start row wrap class="pl-5">
         <v-flex v-for="item in settingsList" :key="item.name" xs2 class="text-xs-center pb-5">
           <v-btn
-            class="square-button"
             :color="item.color"
             @click="gotoFurtherSettings(item.target,item.name)"
+            class="square-button"
           >
             <v-flex xs2 class="button-text">
               <v-icon large dark>{{item.icon}}</v-icon>

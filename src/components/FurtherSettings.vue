@@ -8,7 +8,7 @@
 
     <v-layout align-start justify-start row wrap class="pl-5 pt-5" style="height:600px">
       <v-flex v-for="item in furtherSettingsList" :key="item.name" xs3 class="text-xs-center pb-5">
-        <v-btn class="square-button" :color="item.color">
+        <v-btn :color="item.color" class="square-button">
           <v-flex xs3 class="button-text">
             <v-icon large dark>{{item.icon}}</v-icon>
           </v-flex>
